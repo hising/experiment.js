@@ -26,6 +26,6 @@ exports.setBucket = function (name, value, seconds) {
 };
 exports.chooseVariation = function (randomFunc) {
     if (randomFunc === void 0) { randomFunc = exports.random; }
-    var rnd = exports.random();
+    var rnd = randomFunc();
 };
 //# sourceMappingURL=index.js.map

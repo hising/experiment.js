@@ -17,7 +17,7 @@ export const localStorageSet = (name: string, value: any, seconds: number = defa
 export const getBucket = (name: string) => {};
 export const setBucket = (name: string, value: any, seconds: number = defaultBucketPersistance) => {};
 export const chooseVariation = (randomFunc: CallableFunction = random) => {
-    let rnd = random();
+    let rnd = randomFunc();
 };
 
 export interface Experiment {
